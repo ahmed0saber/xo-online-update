@@ -6,7 +6,7 @@
     https://ahmed0saber.github.io/xo-online-update/
 */
 
-*{
+*:not(tspan){
     padding: 0;
     margin: 0;
     font-family: "Coming soon", sans-serif;
@@ -58,8 +58,10 @@ main .home{
 }
 main .home .logo-container{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-main .home .logo-container img{
+main .home .logo-container svg{
     width: 100%;
     max-width: 300px;
 }
@@ -110,6 +112,6 @@ main .home .logo-container img{
         padding: 20px 2px;
     }
     main .home .logo-container{
-        justify-content: center;
+        flex-direction: row;
     }
 }
