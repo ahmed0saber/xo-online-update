@@ -1,0 +1,113 @@
+/*
+    https://coolors.co/2e3532-f7fff7-ff6b6b-1282a2-048a81
+    https://xo-online.herokuapp.com/
+    https://github.com/ahmed0saber/XO-online
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Coming soon", sans-serif;
+}
+body{
+    background-color: #2E3532;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px 10px;
+    background-color: #1282A2;
+}
+header span.logo{
+    font-size: 28px;
+    color: #f7fff7;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header nav div{
+    display: flex;
+    flex-direction: row;
+}
+header nav div a{
+    padding: 0px 10px;
+    color: #2E3532;
+}
+header nav div a:hover{
+    color: #f7fff7;
+}
+header nav div a.active{
+    color: #f7fff7;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+}
+main .home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+main .home .logo-container{
+    display: flex;
+}
+main .home .logo-container img{
+    width: 100%;
+    max-width: 300px;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.btns a{
+    padding: 16px 30px;
+    background-color: #1282A2;
+    color: #f7fff7;
+    margin: 20px;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 850px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    header span.logo{
+        padding: 4px 0 8px 0;
+    }
+    header nav{
+        flex-direction: row;
+        text-align: center;
+    }
+    header nav div{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    header nav div a{
+        font-size: 22px;
+        padding: 4px 10px;
+        width: 100%;
+    }
+    header nav div a span{
+        display: none;
+    }
+
+    main{
+        min-height: calc(100vh - 130px);
+    }
+    main .home{
+        flex-direction: column;
+        padding: 20px 2px;
+    }
+    main .home .logo-container{
+        justify-content: center;
+    }
+}
