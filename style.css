@@ -6,10 +6,10 @@
     https://ahmed0saber.github.io/xo-online-update/
 */
 
-*:not(tspan){
+*/*:not(tspan)*/{
     padding: 0;
     margin: 0;
-    font-family: "Coming soon", sans-serif;
+    font-family: "Ravie", "Coming soon", sans-serif;
 }
 body{
     background-color: #2E3532;
