@@ -362,13 +362,14 @@ main .home.leaderboard{
     overflow: hidden;
 }
 
-main.notifications{
+main .notifications{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    min-height: 100vh;
 }
-main.notifications .notification{
-    width: 94%;
+main .notifications .notification{
+    width: 92%;
     max-width: 600px;
     background-color: #1282A2;
     margin: 12px auto;
@@ -376,12 +377,107 @@ main.notifications .notification{
     color: #f7fff7;
     position: relative;
 }
-main.notifications .notification span{
+main .notifications .notification span{
     position: absolute;
     right: 6px;
     opacity: 0.8;
 }
 
+.fullscreen{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+main.main-chat{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.chat-section{
+    width: 100%;
+    height: 100%;
+}
+.chat{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.msg-container{
+    height: 100%;
+    background-color: #eee0;
+}
+.msg-container .msg{
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.msg-container .msg.myMSG{
+    justify-content: flex-end;
+}
+.msg-container .msg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0px 6px 0px 0px;
+}
+.msg-container .msg div{
+    padding: 8px;
+    background-color: #f7fff7;
+    color: #2E3532;
+    width: fit-content;
+    border-radius: 0 10px 10px 10px;
+    -webkit-border-radius: 0 10px 10px 10px;
+    -moz-border-radius: 0 10px 10px 10px;
+    -ms-border-radius: 0 10px 10px 10px;
+    -o-border-radius: 0 10px 10px 10px;
+    border: 2px solid #12121212;
+}
+.msg-container .msg.myMSG div{
+    background-color: #09d;
+    border-radius: 10px 0 10px 10px;
+    -webkit-border-radius: 10px 0 10px 10px;
+    -moz-border-radius: 10px 0 10px 10px;
+    -ms-border-radius: 10px 0 10px 10px;
+    -o-border-radius: 10px 0 10px 10px;
+}
+.msg-container .msg div p{
+    font-size: 16px;
+}
+.msg-container .msg div span{
+    font-size: 13px;
+    float: right;
+    margin: 4px;
+    opacity: 0.8;
+    font-weight: bold;
+}
+.inputs{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin: -40px 0 0 0;
+}
+.inputs input[type="text"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    font-size: 16px;
+}
+.inputs button{
+    padding: 8px 24px;
+    font-size: 16px;
+    border: none;
+}
 
 
 @media only screen and (max-width: 850px){
