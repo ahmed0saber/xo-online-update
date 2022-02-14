@@ -362,6 +362,27 @@ main .home.leaderboard{
     overflow: hidden;
 }
 
+main.notifications{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+main.notifications .notification{
+    width: 94%;
+    max-width: 600px;
+    background-color: #1282A2;
+    margin: 12px auto;
+    padding: 6px 6px 30px 6px;
+    color: #f7fff7;
+    position: relative;
+}
+main.notifications .notification span{
+    position: absolute;
+    right: 6px;
+    opacity: 0.8;
+}
+
+
 
 @media only screen and (max-width: 850px){
     header{
