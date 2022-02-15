@@ -123,6 +123,14 @@ main .home .logo-container svg{
     margin: 20px;
     font-size: 18px;
 }
+.btns input[type="text"]{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    margin: 0 auto;
+    padding: 6px;
+    font-size: 17px;
+}
 
 #play{
     display: none;
