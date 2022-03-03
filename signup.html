@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notifications | XO Online</title>
+    <title>Signup | XO Online</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@400&display=swap" rel="stylesheet">
@@ -18,30 +18,26 @@
         <span class="logo">XO Online</span>
         <nav>
             <div>
-                <a href="./index.html"><i class="fa fa-home"></i> <span>Home</span></a>
+                <a class="active" href="./index.html"><i class="fa fa-home"></i> <span>Home</span></a>
                 <a href="./leaderboard.html"><i class="fa fa-trophy"></i> <span>Leaderboard</span></a>
                 <a href="./chat.html"><i class="fa fa-envelope"></i> <span>Chat</span></a>
-                <a class="active" href="./notifications.html"><i class="fa fa-bell"></i> <span>Notifications</span></a>
+                <a href="./notifications.html"><i class="fa fa-bell"></i> <span>Notifications</span></a>
                 <a href="./profile.html"><i class="fa fa-user"></i> <span>Profile</span></a>
             </div>
         </nav>
     </header>
     <main>
-        <section class="notifications">
-            <section class="notifications-container">
-                <div class="notification">
-                    <p>Hello, That's a notification.</p>
-                    <span>5/7/2001</span>
-                </div>
-                <div class="notification">
-                    <p>Hello, That's another notification.</p>
-                    <span>5/7/2001</span>
-                </div>
-                <div class="notification">
-                    <p>Hello, That's one more notification.</p>
-                    <span>5/7/2001</span>
-                </div>
-            </section>
+        <section class="form">
+            <h2>Create new account</h2>
+            <form>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <button>Sign up</button>
+                <p>Already have account ? <a href="./login.html">Log in</a></p>
+            </form>
         </section>
     </main>
 </body>

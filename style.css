@@ -98,6 +98,7 @@ main .home{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 20px 0px;
 }
 main .home .logo-container{
     display: flex;
@@ -509,6 +510,144 @@ main.main-chat{
     color: #f7fff7;
     margin: 10px;
     font-size: 18px;
+}
+
+.logo-container img{
+    width: 90%;
+    max-width: 350px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid #1282A2;
+}
+.profile-controls{
+    text-align: center;
+    padding: 10px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.profile-controls h3{
+    color:#1282A2;
+    font-size: 24px;
+}
+.profile-controls div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4px 2px;
+}
+.profile-controls .col-btns a{
+    text-decoration: none;
+    color: #f7fff7;
+    background-color: #1282A2;
+    padding: 8px 24px;
+    margin: 4px;
+}
+.profile-controls p{
+    color: #f7fff7;
+    text-align: center;
+}
+.match-history{
+    padding: 4px;
+}
+.match-history h2{
+    text-align: center;
+    color: #1282A2;
+}
+.match-history fieldset{
+    margin: 12px 2px;
+    border: 2px solid #f7fff7;
+    padding: 4px;
+}
+.match-history fieldset legend{
+    color: #f7fff7;
+    border: 2px solid #f7fff7;
+    text-align: center;
+    padding: 4px 12px;
+    text-transform: capitalize;
+}
+.match-history fieldset legend.win{
+    background-color: #128212;
+}
+.match-history fieldset legend.lose{
+    background-color: #821212;
+}
+.match-history fieldset legend.draw{
+    background-color: #121282;
+}
+.match-history fieldset p{
+    color: #f7fff7;
+}
+.match-history fieldset span{
+    float: right;
+    color: #f7fff7;
+}
+
+.profile-controls input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 38px;
+    padding: 4px;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin: 2px 0 14px 0;
+}
+.profile-controls button{
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    background-color: #1282A2;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin: 10px 0px;
+}
+
+.form h2{
+    text-align: center;
+    color: #1282A2;
+    font-size: 26px;
+}
+.form form{
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 2px auto;
+    padding: 8px;
+}
+.form form input, .form form button{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 4px;
+    margin: 4px 0;
+    font-size: 18px;
+}
+.form form button{
+    background-color: #1282A2;
+    color: #f7f7f7;
+}
+.form form p{
+    color: #f7f7f7;
+    margin: 8px 0;
+}
+.form form p a{
+    color: #1282A2;
+    font-weight: bold;
 }
 
 
